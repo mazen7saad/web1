@@ -1,0 +1,472 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    /* background-image: linear-gradient(to right, red,rgb(255, 102, 0)); */
+
+    background-image: linear-gradient(to right, rgba(25, 132, 231, 0.808),rgb(0, 204, 255));
+
+    /* lightblue; */
+
+}
+
+#logobox{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: #fafafa;
+}
+
+#h1header{
+    float: left;
+    line-height: 100px;
+    padding: 0 50px;
+}
+
+#h1header:hover{
+    background-color: lightblue;
+    background-image: linear-gradient(to right, rgb(5, 164, 204),rgb(30, 111, 216));
+    color: black;
+}
+
+/* #h1header2 */
+
+#h1header2{
+    display: none;
+    /* float: left; */
+    line-height: 100px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+#h1header2:hover{
+    /* background-color: orange; */
+    background-image: linear-gradient(to right, rgb(5, 164, 204),rgb(30, 111, 216));
+    color: black;
+    
+}
+
+/*  */
+
+#logo{
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* body{
+    background-image: url(img/image.jpeg);
+} */
+
+/* #logo{
+    color: transparent;
+    background: url(img/image.jpeg);
+    -webkit-background-clip:text;
+} */
+
+/* #logo:hover{
+    background-color: rgb(255, 153, 0);
+} */
+
+
+header a{
+    color: black;
+}
+
+
+/* header nav  */
+
+nav{
+    width: 70%;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+/* main  */
+
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(255, 102, 0);
+    /* background-image: linear-gradient(to right, red,rgb(255, 102, 0)); */
+    border-top: 3px solid white;
+    /* clip-path: polygon(5% 0, 100% 0%, 96% 100%, 0% 100%); */
+    animation-name: changeBackground;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: #fafafa;
+    text-align: center;
+    float: left;
+}
+
+aside img{
+    width: 90%;
+}
+
+#h1aside{
+    padding: 20px 0;
+    border-bottom: 2px solid orange;
+
+}
+
+
+/*  مربع تغيير الون 
+
+الالوان 
+
+
+    background-color: darkblue;
+    background-color: aqua ;
+    background-color: blue;
+    background-color: cyan;
+    background-color: cornflowerblue;
+    background-color: darkturquoise;
+    background-color: dodgerblue;
+    background-color: lightseagreen;
+    background-color: lightskyblue;
+    background-color: mediumblue;
+    background-color: midnightblue;
+    background-color: navy;
+    background-color: rgb(0, 204, 255);
+    background-color: rgb(30, 111, 216);
+    background-color: rgb(5, 164, 204);
+    background-color: rgba(25, 132, 231, 0.808);
+    background-color: steelblue;
+    background-color: aqua;
+
+*/
+@keyframes changeBackground{
+    0%{
+        background-color: white;
+    }
+
+    15%{
+        background-color: rgba(106, 184, 214, 0.664);
+    }
+
+    25%{
+        background-color: rgba(0, 183, 255, 0.938);
+    }
+
+    50%{
+        background-color:  rgba(70, 134, 230, 0.788);
+    }
+
+    75%{
+        background-color: rgb(38, 99, 231);
+    }
+
+    100%{
+        background-color: rgb(32, 17, 243);
+    }
+}
+
+
+#article{
+    float: right;
+    width: 70%;
+    /* background-color: black; */
+    height: 450px;
+    position: relative;
+}
+
+#box{
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    width: 400px;
+    height: 180px;
+    background-color: #fafafa;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#box h1{
+    border-bottom: 3px solid red;
+    padding: 15px 0 ;
+    /* font-weight: bold; */
+    font-size: 30px;
+}
+
+#box p{
+    font-weight: bold;
+    font-size: 25px;
+    
+    /* font-family: ; */
+    /* text-align: justify; */
+}
+
+#contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+#contact-box img{
+    width: 45px;
+    border-bottom: 2px double red;
+    padding-bottom: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+
+#contact-box img:hover{
+    width: 55px;
+    border-bottom: 2px solid black;
+}
+
+#idma{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#idma:hover{
+    background-color: rgba(224, 146, 146, 0);
+    color: blue;
+}
+
+
+/* @media all{
+
+}
+
+@media print{
+
+} */
+
+#print{
+    display: none;
+}
+
+@media only screen and(min-width:940px) and(max-width:1070){
+    #logobox{
+        width: 35%;
+    }
+
+    #article{
+width: 65%;
+    }
+
+    aside{
+width: 35%;
+    }
+}
+
+@media only screen and (max-width:940px){
+    #logobox{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:801px){
+    header, main{
+        height: auto;
+    }
+    #logobox{
+        width: 100%;
+    }
+
+    #h1header, #logo{
+        float: none;
+    }
+
+    span a{
+        text-decoration: none;
+        text-align: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    #article{
+        height: 230px;
+        width: 100%;
+        background-color: #fafafa;
+    }
+}
+
+@media only screen and (max-width:500px){
+    nav li{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (orientation:landscape) and (max-width:500px){
+    #logobox{
+        background-color: aqua;
+    }
+}
+
+@media print{
+    nav{
+        display: none;
+    }
+
+    #print{
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width:810px){
+    #logo{
+        width: 100%;
+        height: 200px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:810px){
+    #h1header{
+        display: none;
+    }
+    
+    #h1header2{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* icon face youtube twitter */
+
+/* #contact-icon ul{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 25px;
+margin-right: 90px;
+margin-left: px;
+list-style-type: none;
+
+}
+
+#contact-icon ul li a{
+
+    font-size: 60px;
+text-align: center;
+justify-content: center;
+    display: inline;
+    margin-left: 10%;
+    color: red;
+
+} */
+
+
+/*   article    */
+
+
+#course1, #course2{
+    text-align: center;
+    clear: both;
+
+}
+
+#course1 img, #course2 img{
+    max-width: 28%;
+    margin: 10px;
+}
+
+/* #course1, #course2 a{
+    color: inherit;
+    text-decoration: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
